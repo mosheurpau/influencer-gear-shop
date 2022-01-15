@@ -43,22 +43,23 @@ main {
 .banners {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-column-gap: 30px;
+    padding-top: 20px;
+}
+.banner-img {
     background-image: url(images/Circle\ design.svg);
     background-repeat: no-repeat;
     background-position: right;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
+    padding: 50px;
 }
 
 /*------------
     Banner
 ----------- */
-.banner {
-    display: flex;
-    align-items: center;
-  
+.banners {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
 }
 .banner-info h2{
     font-size: 52px;
@@ -146,11 +147,49 @@ main {
     .container {
         width: 100%;
     }
-    .banners {
+    .banners, .collections {
         grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+    .banner h2 {
+        font-size: 28px;
+    }
+    .banner p{
+        font-size: 14px;
+    }
+    .banner {
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    .banner-img {
+        margin-top: 0px;
+        padding-top: 0px;
+    
+    }
+    .banner-img img {
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+        top: -20px;
+        left: -10px;
+        width: 250px;
+        height: 250px;
+    }
+    .banner-info {
+        text-align: center;
     }
     .menu-item {
         display: none;
+    }
+    #box-1{
+        order: 2;
+    }
+    #box-2{
+        order: 1;
+        flex-grow: 1;
     }
 }
 
@@ -158,8 +197,20 @@ main {
 @media only screen and (min-width: 688px) and (max-width: 992px) {
     .container {
         width: 100%;
-    }.banners {
+    }
+    .banners {
         grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+    .collections {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
     }
     .menu-item {
         display: none;
