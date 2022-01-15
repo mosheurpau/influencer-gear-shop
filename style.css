@@ -17,6 +17,9 @@ nav a {
     font-size: 16px;
     font-weight: 600;
 }
+nav a:hover {
+    color: #E02C6D;
+}
 nav .logo {
     font-size: 24px;
     font-weight: bold;
@@ -79,11 +82,20 @@ main {
     font-size: 16px;
     font-weight: 700;
 }
+.link-button:hover {
+    box-shadow: 0px 0px 40px #E02C6D;
+}
 .banner-img img {
     position: relative;
     top: 10px;
-    left: 50px;
-    
+    left: 50px;  
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+
+}
+.banner-img img:hover{
+    transform: rotate(360deg)
+    scale(1.5);
 }
 
 /* -----------------------------
@@ -101,6 +113,10 @@ main {
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
+    transition-duration: 1s;
+}
+.collection:hover{
+    transform: scale(1.05);
 }
 .pop-collection h3 {
     text-align: center;
@@ -172,6 +188,34 @@ best-price style
 }
 .best-price strong {
     color: #E02C6D;
+}
+footer {
+    width: 100%;
+    background-color: #0A0826;
+    text-align: center;
+}
+.coypright h3{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+}
+.coypright p {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+}
+.social-media a {
+    text-decoration: none;
+}
+.social-media .fab:hover {
+    color: #E02C6D;
+}
+.social-media .fab {
+    color: white;
+    font-size: 24px;
+    margin-right: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
 }
 
 
