@@ -137,6 +137,43 @@ main {
     font-weight: 700;
     color: gray;
 }
+.link-more a {
+    color: #E02C6D;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    position: relative;
+    top: 50px;
+    left: 960px;
+}
+
+
+/* -----------------
+best-price style
+----------------- */
+.best-price {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.best-price h3 {
+    color:#0A0826;
+    font-size: 38px;
+    font-weight: 700;
+    padding: 40px 15px 5px 15px;
+}
+.best-price p {
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: justify;
+    padding: 15px;
+}
+.best-price strong {
+    color: #E02C6D;
+}
+
 
 /* -------------------
     Media Queries
@@ -191,7 +228,19 @@ main {
         order: 1;
         flex-grow: 1;
     }
+    .link-more a {
+        position: relative;
+        top: 40px;
+        left: 240px;
+    }
+    .best-price h3 { 
+        font-size: 28px;
+        font-weight: 700;
+
+    }
 }
+
+
 
 /* tablet devices */
 @media only screen and (min-width: 688px) and (max-width: 992px) {
@@ -214,6 +263,11 @@ main {
     }
     .menu-item {
         display: none;
+    }
+    .link-more a {
+        position: relative;
+        top: 40px;
+        left: 640px;
     }
     
 }  
